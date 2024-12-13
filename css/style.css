@@ -1,0 +1,319 @@
+body {
+padding: 0 ;
+margin: 0 ;
+
+
+}
+
+.frame-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;  
+}
+
+.main-container {
+    width: 98%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  
+}
+
+.background-video {
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    top: 0; 
+    left: 0; 
+    z-index: -1; 
+    animation: hue-light 10s infinite linear; 
+}
+
+
+.main-square {
+    width: 90vmin;  
+    height: 90vmin; 
+    background-color: red;
+    position: relative; 
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);  
+    grid-template-rows: repeat(8, 1fr);
+    gap: 2px;
+}
+
+
+.middle-line {
+    width: 100%;
+    height: 10px; 
+    background-color: chartreuse;
+    position: absolute; 
+    top: 49.5%; 
+    left: 0;
+}
+
+
+
+.square {
+    background-image: url('/assets/images/ma.gif'); 
+    border: 1px solid white;
+}
+
+
+.unit-info-container {
+    top: 4%;
+    position: absolute;
+    left: 4%;
+    width: 35vh;
+    height: 70vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    background-color: transparent;
+}
+
+.point {
+    width: 100%; 
+    height: 10vh;
+    background-color: white;
+}
+
+.unit-info {
+    width: 100%; 
+    height: 10vh;
+    background-color: white;
+}
+
+.turn-light {
+    width: 100%; 
+    height: 70vh;
+    background-color:transparent;
+}
+
+.unit-summon {
+    position: fixed;        
+    bottom: 10%;            
+    left: 3%;                
+    width: 10vh;            
+    height: 10vh;           
+    background-color: pink; 
+    border-top-right-radius: 100%;   
+    border-bottom-right-radius: 100%; 
+    display: flex;          
+    align-items: center;     
+}
+
+.unit {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);   
+    gap: 10px; 
+    position: absolute;
+    bottom: 5%;
+    left: 10vh;
+    width: 40vh;
+    height: 40vh;
+    background-image: url('/assets/images/mt.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+@keyframes hue-light {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    20% {
+        filter: hue-rotate(90deg);
+    }
+    40% {
+        filter: hue-rotate(180deg);
+    }
+    60% {
+        filter: hue-rotate(270deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.button-container {
+    bottom: 10%;
+    position: absolute;
+    right: 5%;
+    transform: translateX(-50%);
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ActivateLayer {
+    width: 100%; 
+    height: 10vh;
+    background-color: white;
+    position:absolute;
+    right: 20%;
+}
+
+#layer1 {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    opacity: 0.5;
+    z-index: 0;
+    left: 0;
+    transition: top 0.5s ease;
+    transform-origin: center;
+    background-color: white;
+}
+
+.smalldots {
+    width: 10px;
+    height: 10px;
+    background-color: purple;
+    border-radius: 50%;
+    position: absolute; 
+}
+
+.tank {
+    position: absolute;
+    top: 8%; 
+    left: 60%;
+    width: 25vmin; 
+    height: 15vmin; 
+    transform: rotate(90deg);
+    opacity: 0.8;
+    
+}
+
+
+.tank1 {
+    position: absolute;
+    top: 8%; 
+    left: 5%; 
+    width: 25vmin;
+    height: 10vmin;
+    transform: rotate(90deg);
+    opacity: 0.8;
+   
+}
+
+.tank2 {
+    position: absolute;
+    top: 8%; 
+    left: 40%;
+    width: 25vmin;
+    height: 10vmin;
+    transform: rotate(90deg);
+    opacity: 0.8;
+    
+}
+
+
+.robot{
+    width: 100px;  
+    top: 20%; 
+    left: 50%;
+    position: absolute;
+    height: auto;
+    margin-left: 25px;  
+    cursor: crosshair;
+    z-index: 2;
+}
+
+
+.robot1 {
+    width: 100px;  
+    top: 10%; 
+    left: 5%;
+    position: absolute;
+    height: auto;
+    margin-left: 25px;  
+    cursor: crosshair;
+    z-index: 2;
+}
+
+.robot3 {
+    top: 50%;
+    left: 5%;
+    width: 100px;  
+    position: absolute;
+    height: auto;
+    margin-left: 25px;  
+    cursor:crosshair;
+    z-index: 2;
+}
+
+
+.robot4 {
+    top: 50%;
+    left: 40%;
+    width: 100px;  
+    position: absolute;
+    height: auto;
+    margin-left: 25px;  
+    cursor: crosshair;
+    z-index: 2;
+    
+}
+
+.robot:hover, .robot1:hover,  .robot3:hover, .robot4:hover {
+    transform: scale(1.8);  
+    transition: transform 0.3s ease;
+}
+
+
+
+.ex-gif {
+    width: 100%;  
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10; 
+}
+
+.green-light {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 5;
+    display:block;
+    border-radius: 50%;
+
+}
+
+.red-light{
+display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 5;
+    border-radius: 50%;
+
+}
+
+.safelayer {
+    width: 40vh; 
+    height: 40vh;
+    position: relative;
+    top: 0%;
+    opacity: 0.8;
+    left: 0;
+    transition: top 0.5s ease;
+    transform-origin: center;
+    background-image: url('/assets/images/sz.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
