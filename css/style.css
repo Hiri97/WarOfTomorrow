@@ -60,7 +60,7 @@ margin: 0 ;
 
 
 .square {
-    background-image: url('/assets/images/ma.gif'); 
+    background-image: url('../assets/images/ma.gif'); 
     border: 1px solid white;
 }
 
@@ -118,7 +118,7 @@ margin: 0 ;
     left: 10vh;
     width: 40vh;
     height: 40vh;
-    background-image: url('/assets/images/mt.jpeg');
+    background-image: url('../assets/images/mt.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.9;
@@ -313,7 +313,7 @@ display: none;
     left: 0;
     transition: top 0.5s ease;
     transform-origin: center;
-    background-image: url('/assets/images/sz.jpg');
+    background-image: url('../assets/images/sz.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
