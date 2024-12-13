@@ -179,7 +179,7 @@ function dothittarget() {
                 console.log("Hit detected: explosion triggered!");
 
                 
-                tank.style.backgroundImage = "url('../assets/images/ex.gif')";
+                tank.style.backgroundImage = "url('assets/images/ex.gif')";
                 tank.style.backgroundSize = "cover"; 
                 tank.style.backgroundRepeat = "no-repeat";
                 tank.style.position = "absolute";
@@ -355,7 +355,7 @@ layer2.style.top = '0';
 layer2.style.left = '0';
 layer2.style.width = '100%';
 layer2.style.height = '50%';
-layer2.style.backgroundImage = "url('../assets/images/wl.jpg')";
+layer2.style.backgroundImage = "url('assets/images/wl.jpg')";
 layer2.style.backgroundSize = "cover";
 layer2.style.backgroundRepeat = "no-repeat";
 layer2.style.zIndex = '0';
@@ -415,7 +415,7 @@ function generateCPUDots() {
 
         if (isColliding) {
             robot.style.display = 'none';
-            robot.style.backgroundImage = "url('../assets/images/ex.gif')";
+            robot.style.backgroundImage = "url('assets/images/ex.gif')";
             robot.style.backgroundSize = "cover";
             robot.style.backgroundRepeat = "no-repeat";
             robot.style.position = "absolute";
@@ -445,7 +445,7 @@ function addRobots(count) {
     const robotStyles = [
         {
             className: "robot",
-            src: "../assets/images/ro.gif",
+            src: "assets/images/ro.gif",
             top: "20%",
             left: "50%",
             width: "100px",
@@ -457,7 +457,7 @@ function addRobots(count) {
         },
         {
             className: "robot1",
-            src: "../assets/images/ro1.gif",
+            src: "assets/images/ro1.gif",
             top: "10%",
             left: "5%",
             width: "100px",
@@ -469,7 +469,7 @@ function addRobots(count) {
         },
         {
             className: "robot3",
-            src: "../assets/images/ro3.gif",
+            src: "assets/images/ro3.gif",
             top: "50%",
             left: "5%",
             width: "100px",
@@ -481,7 +481,7 @@ function addRobots(count) {
         },
         {
             className: "robot4",
-            src: "../assets/images/ro4.gif",
+            src: "assets/images/ro4.gif",
             top: "50%",
             left: "40%",
             width: "100px",
